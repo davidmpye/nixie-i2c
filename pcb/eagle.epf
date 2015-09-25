@@ -1,0 +1,19 @@
+[Eagle]
+Version="07 03 00"
+Platform="Windows"
+Serial="722AEC83C8-LSR-WLM-1CL"
+Globals="Globals"
+Desktop="Desktop"
+
+[Globals]
+AutoSaveProject=1
+
+[Win_1]
+Type="Control Panel"
+Loc="-11 -45 588 354"
+State=2
+Number=0
+
+[Desktop]
+Screen="2160 1440"
+Window="Win_1"
