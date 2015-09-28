@@ -3,7 +3,7 @@
   Created by Dr David Pye - Sept 2015
   Licenced under the GNU GPL v3
 */
-#include "./nixie-i2c.h"
+#include <nixie_i2c.h>
 
 int Nixie_i2c::_pins[10] = { 3, 9, 10, 11, 12, 13, 7, 6, 5, 4 };
 

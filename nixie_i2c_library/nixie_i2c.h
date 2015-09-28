@@ -3,8 +3,8 @@
   Created by Dr David Pye - Sept 2015
   Licenced under the GNU GPL v3
 */
-#ifndef NIXIE_I2C_h
-#define NIXIE_I2C_h
+#ifndef NIXIE_I2C
+#define NIXIE_I2C
 
 #define RHDP_PIN 2
 #define LHDP_PIN 8
