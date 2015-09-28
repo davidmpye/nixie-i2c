@@ -28,31 +28,23 @@ void Nixie_i2c::displayNumber(int number) {
 
 void Nixie_i2c::slotMachineDisplayNumber(int newNumber) {
 
-  int numPasses;
-  if (_currentNumber == newNumber) numPasses = 1; else numPasses = 2; //only do 1 pass
-
   bool orig_lhdp = _lhdpState;
   bool orig_rhdp = _rhdpState;
 
   int num = _currentNumber;
-  int passes = 0;
+  for (int numPasses = 10 + newNumber - num; numPasses >0; --numPasses)  {
+ 	if (num == 9) num = 0; else num++;
 
-  while (1) {
-    if (num == 9) num = 0; else num++;
-
-    //toggle the lhdp/rhdp cathodes as we go round.
-    _lhdpState = !_lhdpState;
-    _rhdpState = !_rhdpState;
-  
-    if (num == newNumber) {
-      //reset the lhdp/rhdp states in case we stop here!
-      _lhdpState = orig_lhdp;
-      _rhdpState = orig_rhdp;
-      passes ++;
-    }
-    displayNumber(num);
-    if (passes == numPasses) break;
-    delay(50);
+ 	//toggle the lhdp/rhdp cathodes as we go round.
+ 	_lhdpState = !_lhdpState;
+    	_rhdpState = !_rhdpState;
+	if (numPasses == 1) {
+		//Put the decimal point statuses back to the correct ones!
+		_lhdpState = orig_lhdp;
+		_rhdpState = orig_rhdp;
+	}
+	displayNumber(num);
+	delay(50);
   }
 }
 
