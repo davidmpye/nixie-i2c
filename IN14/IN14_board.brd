@@ -16,7 +16,7 @@
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="16" fill="1" visible="yes" active="yes"/>
 <layer number="22" name="bPlace" color="14" fill="1" visible="yes" active="yes"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
@@ -32,8 +32,8 @@
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
 <layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
 <layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
-<layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="yes"/>
-<layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="yes"/>
+<layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
+<layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
 <layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="yes"/>
 <layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
@@ -813,7 +813,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <element name="T6" library="transistor" package="SOT23" value="BC848" x="2" y="23"/>
 <element name="T7" library="transistor" package="SOT23" value="BC848" x="6" y="23"/>
 <element name="T8" library="transistor" package="SOT23" value="BC848" x="22" y="23"/>
-<element name="T9" library="transistor" package="SOT23" value="BC848" x="22" y="28"/>
+<element name="T9" library="transistor" package="SOT23" value="BC848" x="22" y="27.5"/>
 <element name="T10" library="transistor" package="SOT23" value="BC848" x="14" y="28"/>
 <element name="T11" library="transistor" package="SOT23" value="BC848" x="14" y="23"/>
 <element name="JMP1" library="jump-0r-smd" package="A0R-JMP" value="0R-JUMPA" x="14" y="3" rot="MR270"/>
@@ -888,7 +888,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="14.95" y1="28.2" x2="15.25" y2="28.5" width="0.3048" layer="1"/>
 <wire x1="18.95" y1="26.9" x2="18.95" y2="28.2" width="0.3048" layer="1"/>
 <wire x1="18.95" y1="28.2" x2="19.25" y2="28.5" width="0.3048" layer="1"/>
-<wire x1="22.95" y1="26.9" x2="22.95" y2="28.2" width="0.3048" layer="1"/>
+<wire x1="22.95" y1="26.4" x2="22.95" y2="28.2" width="0.3048" layer="1"/>
 <wire x1="22.95" y1="28.2" x2="23.25" y2="28.5" width="0.3048" layer="1"/>
 <via x="3" y="20.5" extent="1-16" drill="0.6"/>
 <via x="11" y="20.5" extent="1-16" drill="0.6"/>
@@ -1081,8 +1081,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="17.5" y1="34.75" x2="17.5" y2="31.25" width="0.3048" layer="1"/>
 <wire x1="17.5" y1="31.25" x2="19.5" y2="29.5" width="0.3048" layer="1"/>
 <wire x1="19.5" y1="29.5" x2="20" y2="29" width="0.3048" layer="1"/>
-<wire x1="20" y1="29" x2="20" y2="26.1" width="0.3048" layer="1"/>
-<wire x1="20" y1="26.1" x2="22" y2="24.1" width="0.3048" layer="1"/>
+<wire x1="20" y1="29" x2="20" y2="25.35" width="0.3048" layer="1"/>
+<wire x1="20" y1="25.35" x2="22" y2="24.1" width="0.3048" layer="1"/>
 </signal>
 <signal name="CAT_9">
 <contactref element="NIXIE_1" pad="9"/>
@@ -1093,7 +1093,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <via x="23.25" y="30" extent="1-16" drill="0.6"/>
 <wire x1="23.25" y1="30" x2="22.75" y2="29.75" width="0.3048" layer="1"/>
 <wire x1="22.75" y1="29.75" x2="22.4" y2="29.5" width="0.3048" layer="1"/>
-<wire x1="22.4" y1="29.5" x2="22" y2="29.1" width="0.3048" layer="1"/>
+<wire x1="22.4" y1="29.5" x2="22" y2="28.6" width="0.3048" layer="1"/>
 </signal>
 <signal name="CAT_0">
 <contactref element="NIXIE_1" pad="0"/>
@@ -1305,9 +1305,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <signal name="N$11">
 <contactref element="T9" pad="1"/>
 <contactref element="RN3" pad="5"/>
-<wire x1="21.05" y1="26.9" x2="21.1" y2="26.9" width="0.3048" layer="1"/>
-<wire x1="21.1" y1="26.9" x2="23.25" y2="24.75" width="0.3048" layer="1"/>
-<wire x1="23.25" y1="24.75" x2="23.25" y2="23.5" width="0.3048" layer="1"/>
 <wire x1="23.25" y1="23.5" x2="22.75" y2="23" width="0.3048" layer="1"/>
 <wire x1="22.75" y1="23" x2="22" y2="23" width="0.3048" layer="1"/>
 <wire x1="22" y1="23" x2="22" y2="20.25" width="0.3048" layer="1"/>
@@ -1315,6 +1312,11 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="23.5" y1="19" x2="23.5" y2="15.5" width="0.3048" layer="1"/>
 <wire x1="23.5" y1="15.5" x2="22.745" y2="14.745" width="0.3048" layer="1"/>
 <wire x1="21.77" y1="14.745" x2="22.745" y2="14.745" width="0.3048" layer="1"/>
+<wire x1="23.25" y1="23.5" x2="23.25" y2="25" width="0.3048" layer="1"/>
+<wire x1="23.25" y1="25" x2="23" y2="25.25" width="0.3048" layer="1"/>
+<wire x1="23" y1="25.25" x2="21.25" y2="25.25" width="0.3048" layer="1"/>
+<wire x1="21.25" y1="25.25" x2="21.25" y2="26.2" width="0.3048" layer="1"/>
+<wire x1="21.25" y1="26.2" x2="21.05" y2="26.4" width="0.3048" layer="1"/>
 </signal>
 <signal name="N$10">
 <contactref element="T6" pad="1"/>
