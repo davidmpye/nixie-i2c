@@ -6,9 +6,6 @@
 #ifndef NIXIE_I2C
 #define NIXIE_I2C
 
-#define RHDP_PIN 2
-#define LHDP_PIN 8
-
 #include "Arduino.h"
 #include <Adafruit_MCP23017.h>
 

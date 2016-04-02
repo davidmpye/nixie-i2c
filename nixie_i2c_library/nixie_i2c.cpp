@@ -5,7 +5,10 @@
 */
 #include <nixie_i2c.h>
 
-int Nixie_i2c::_pins[10] = { 3, 9, 10, 11, 12, 13, 7, 6, 5, 4 };
+#define RHDP_PIN 3 
+#define LHDP_PIN 12
+
+int Nixie_i2c::_pins[10] = { 8, 6, 4, 5, 7, 2, 13, 9, 11, 10 };
 
 Nixie_i2c::Nixie_i2c(uint8_t i2c_address) {
   _i2c_address = i2c_address;
