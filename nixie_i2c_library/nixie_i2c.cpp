@@ -5,8 +5,8 @@
 */
 #include <nixie_i2c.h>
 
-#define RHDP_PIN 3 
-#define LHDP_PIN 12
+#define RHDP_PIN 12 
+#define LHDP_PIN 3
 
 int Nixie_i2c::_pins[10] = { 8, 6, 4, 5, 7, 2, 13, 9, 11, 10 };
 
