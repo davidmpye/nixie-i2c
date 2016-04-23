@@ -1,10 +1,19 @@
 #IN-14 Nixie Tube I2C PCB design
 
 ##Tech Specs:
-Overall dimensions:
-Nixie tube centre point:
-Screw fixing centres:
-Screw size: M3
+- Overall dimensions: 24mm x  52.5mm
+- Nixie tube centre point:
+- Screw fixing centres:
+- Screw hole size: M3
+- Pinout(from front to rear):
+- - +HV (~170VDC)
+- - GND (Common between +HV and VCC)
+- - LED_DATA_IN (signal 'in' to WS2812B)
+- - LED_DATA_OUT (signal 'out' to next WS2812B in chain)
+- - VCC (3.3-5VDC)
+- - SCL  (single external 4k7 pull-UP resistor per bus advisable)
+- - SDA  (single external 4k7 pull-UP resistor per bus advisable)
+
 
 
 ##Parts list:
