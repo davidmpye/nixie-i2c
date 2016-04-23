@@ -2,8 +2,9 @@
 
 ##Tech Specs:
 - Overall dimensions: 24mm x  52.5mm
-- Nixie tube centre point:
-- Screw fixing centres:
+- Nixie tube centre point: 12mm (ie in the middle of the board in X), 12.3mm in from front edge
+- Screw fixing centre 1: 3.25 from edge, 3.25 in from front of board
+- Screw fixing centre 2: 3mm from other edge, 19.75mm in from front of board
 - Screw hole size: M3
 - Pinout(from front to rear):
 - - +HV (~170VDC)
@@ -13,8 +14,6 @@
 - - VCC (3.3-5VDC)
 - - SCL  (single external 4k7 pull-UP resistor per bus advisable)
 - - SDA  (single external 4k7 pull-UP resistor per bus advisable)
-
-
 
 ##Parts list:
 ###Top side of board:
