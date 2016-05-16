@@ -64,6 +64,10 @@ void Nixie_i2c::unblank() {
   _mcp.writeGPIOAB(b);
 }
 
+int Nixie_i2c::currentNumber() {
+  return _currentNumber;
+}
+
 void Nixie_i2c::setRhdp(bool state) {
   _rhdpState = state;
   _mcp.digitalWrite(RHDP_PIN, _rhdpState ? HIGH: LOW);

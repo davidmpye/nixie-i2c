@@ -18,6 +18,7 @@ class Nixie_i2c
     void slotMachineDisplayNumber(int);
     void blank();
     void unblank();
+    int currentNumber();
 
     void setRhdp(bool state);
     void setLhdp(bool state);
