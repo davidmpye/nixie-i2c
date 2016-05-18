@@ -13,7 +13,7 @@ int Nixie_i2c::_pins[10] = { 8, 6, 4, 5, 7, 2, 13, 9, 11, 10 };
 Nixie_i2c::Nixie_i2c(uint8_t i2c_address) {
   _i2c_address = i2c_address;
   
-  _currentNumber = 0;
+  _currentNumber = -1;
   _lhdpState = _rhdpState = false;
 }
 
