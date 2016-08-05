@@ -17,7 +17,7 @@ The PCB design here (which is tested and works) offers the following features:
  - Bus based (I2C) - put all your tubes in a row on stripboard or similar!
  - Designed for IN-14 nixie tube
  - I2C address (3-bit) settable (solder-pads on underside of board), allowing 9 nixie tubes per I2C bus.
- - Handles all HV switching, allowing a simple library interface to select the digit to be displayed
+ - Handles all HV switching, allowing a simple library interface to select the digit to be displayed.  Uses cheap SMD NPN transistors (MMBTA42s)
  - Has option for installing a programmable RGB (WS2812B) LED under the base of each tube, allowing bottom-lighting of any colour/brightness, without requiring ongoing control from the microcontroller (eg no PWM timing loops etc)
  - Eagle brd/sch files provided
  - Licenced under the OSHW framework
